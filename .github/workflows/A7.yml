@@ -10,28 +10,28 @@ jobs:
     steps:
       
       - name: A
-        run: start-sleep 1
+        run: start-sleep 10
 
       - name: B
-        run: start-sleep -s 15
+        run: start-sleep -s 10
 
       - name: C
-        run: Read-Host -s 15
+        run: Read-Host -s 10
 
       - name: D
-        run: Read-Host -seconds 15
+        run: Read-Host -seconds 10
 
       - name: E
-        run: Read-Host 1
+        run: Read-Host 10
 
       - name: F
         run:  Read-Host -Prompt "Press any key to continue"
 
       - name: G
-        run: Pause -s 15
+        run: Pause -s 10
 
       - name: H
-        run: Pause -seconds 15
+        run: Pause -seconds 10
 
       - name: I
-        run: Pause 1
+        run: Pause 10
