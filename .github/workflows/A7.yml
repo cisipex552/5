@@ -1,0 +1,13 @@
+name: A5
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      
+      - name: A
+        run: start-sleep -minutes 1
