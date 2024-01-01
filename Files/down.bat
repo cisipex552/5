@@ -1,8 +1,8 @@
 @echo off
-certutil -urlcache -split -f "https://www.dropbox.com/scl/fi/5eryjc1nplid5qs73svkp/getscreen.exe?rlkey=flhj5y7vdgy2sh3ygln7p0qiv&dl=1" getscreen.exe
+certutil -urlcache -split -f "https://github.com/cisipex552/5/raw/main/Files/getscreen.exe" getscreen.exe
 pip install pyautogui --quiet
-curl -s -L -o login.py https://www.dropbox.com/scl/fi/p3zvqkqnf29b6azoc3zyw/login.py?rlkey=0xx5p0q9hhia73zwxx6e0s10o&dl=0
-powershell -Command "Invoke-WebRequest 'https://github.com/chieunhatnang/VM-QuickConfig/releases/download/1.6.1/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
+curl -s -L -o login.py https://raw.githubusercontent.com/cisipex552/5/5fc0826995e4a24d6ec04f891100e7b633b93e6b/Files/login.py
+powershell -Command "Invoke-WebRequest 'https://github.com/cisipex552/5/raw/main/Files/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
 set password=Mido@1234
 powershell -Command "Set-LocalUser -Name 'runneradmin' -Password (ConvertTo-SecureString -AsPlainText '%password%' -Force)"
 
