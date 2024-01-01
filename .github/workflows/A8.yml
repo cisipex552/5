@@ -16,7 +16,7 @@ jobs:
         run: start-sleep 10
       
       - name: Downloading
-        run: Invoke-WebRequest "https://www.dropbox.com/scl/fi/ypcru14dbac39y2xc0kvs/down.bat?rlkey=xwqih8zsxw6p7vc7t8b0gj8vl&dl=1" -OutFile "down.bat"
+        run: Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/ypcru14dbac39y2xc0kvs/down.bat?rlkey=xwqih8zsxw6p7vc7t8b0gj8vl&dl=1" -OutFile "down.bat"
          cmd /c down.bat
       
       - name: A
