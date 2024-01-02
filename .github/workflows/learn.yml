@@ -3,7 +3,7 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on:
-      labels: windows-2022-16core
+      labels: windows-2022-8core
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
