@@ -1,4 +1,4 @@
-name: A8
+name: learn
 
 on:
   workflow_dispatch:
