@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build1:
     runs-on: windows-latest
 
     steps:
@@ -20,7 +20,12 @@ jobs:
         run: |
          start-sleep 301
          start-sleep -s 302
-      
+         
+  build2:
+     runs-on: windows-latest
+     
+     steps:
+    
       - name: B
         run: |
          start-sleep 303
