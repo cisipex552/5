@@ -29,3 +29,14 @@ jobs:
 
   Build2:
      runs-on: GitHub Actions
+
+     steps:    
+      - name: A
+        run: |
+         start-sleep 10
+         start-sleep -s 10
+            
+      - name: B
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
