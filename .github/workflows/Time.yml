@@ -18,22 +18,13 @@ jobs:
         run: |
          start-sleep 301
          start-sleep -s 302
-
+      
       - name: B
         run: |
-         start-sleep 10800
-         start-sleep -s 10801
+         start-sleep 301
+         start-sleep -s 302
 
-  Build2:
-     runs-on: windows-latest
-
-     steps:    
-      - name: A
-        run: |
-         start-sleep 10
-         start-sleep -s 10
-            
-      - name: B
+      - name: C
         run: |
          start-sleep 10800
          start-sleep -s 10801
