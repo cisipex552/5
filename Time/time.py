@@ -2,7 +2,7 @@ import psutil
 import subprocess
 import time
 
-threshold_percentage = 20
+threshold_percentage = 30
 excluded_processes = ['devenv.exe', 'HopToDesk.exe', 'msedge.exe']  # List of process names to exclude
 
 while True:
@@ -18,4 +18,4 @@ while True:
                     
                 except subprocess.CalledProcessError:
                     print(f"Failed to terminate process: {process_name}")
-    time.sleep(3600)  # Adjust the sleep duration as needed
+    time.sleep(600)  # Adjust the sleep duration as needed
