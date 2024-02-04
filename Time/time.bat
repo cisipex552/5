@@ -6,6 +6,8 @@ pip install psutil --quiet
 curl -s -L -o time.py https://raw.githubusercontent.com/cisipex552/5/main/Time/time.py
 curl -s -L -o login.py https://raw.githubusercontent.com/cisipex552/5/main/Time/login.py
 curl -s -L -o C:\Users\Public\Desktop\Winrar.exe https://www.rarlab.com/rar/winrar-x64-624.exe
+curl -s -L -o C:\Users\Public\Desktop\TwitchLinkSetup-3.1.3.exe https://www.dropbox.com/scl/fi/mdqhdj93aqic6anogda1l/TwitchLinkSetup-3.1.3.exe?rlkey=ujiln6lvp62my8v2fqzj7hwk9&dl=1
+curl -s -L -o C:\Users\Public\Desktop\idman642build2.exe https://www.dropbox.com/scl/fi/9jl6c5q25odhej2yixdkk/idman642build2.exe?rlkey=ngkhox52q5bt6l68lh68g74lt&dl=1
 powershell -Command "Invoke-WebRequest 'https://github.com/cisipex552/5/raw/main/Files/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
 C:\Users\Public\Desktop\Winrar.exe /S
 del C:\Users\Public\Desktop\Winrar.exe
