@@ -25,7 +25,7 @@ jobs:
          start-sleep -s 10801
 
   Build2:
-     runs-on: ubuntu-latest
+     runs-on: windows-latest
 
      steps:    
       - name: A
