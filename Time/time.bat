@@ -13,7 +13,7 @@ del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 del /f "C:\Users\Public\Desktop\Unity Hub.lnk"
 del /f "C:\Users\Public\Desktop\R 4.3.2.lnk"
 set password=Mido@1234
-powershell -Command "Set-LocalUser -Name 'runneradmin' -Password (ConvertTo-SecureString -AsPlainText '%password%' -Force)"
+powershell -Command "Set-LocalUser -Name 'runneradmin' -Password ( -AsPlainText '%password%' -Force)"
 
 start "" /MAX "C:\Users\Public\Desktop\VMQuickConfig"
 python -c "import pyautogui as pag; pag.click(147, 489, duration=3)"
